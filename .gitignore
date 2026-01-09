@@ -5,6 +5,10 @@ node_modules/
 # Env
 .env
 .env.*
+.venv/
+venv/
+__pycache__/
+*.pyc
 
 # Builds
 dist/

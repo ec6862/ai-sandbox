@@ -1,0 +1,1 @@
+1/8/26 (45 mins) - Ran into issues with PIP, uninstalling/installin. Testing agent.py with OpenAI over Claude.

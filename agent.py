@@ -9,9 +9,12 @@ def get_weather(city: str) -> str:
     return f"It's always sunny in {city}"
 
 agent = create_agent(
-    model="",
-    tools = [],
-    system_prompt=""
+    model="gpt-4o-mini",
+    tools = [get_weather],
+    system_prompt=(
+        "You are a helpful assistant. "
+        "If a user asks about the weather, call the get_weather tool with the city name"
+    )
 )
 
 agent.invoke(
@@ -21,3 +24,5 @@ agent.invoke(
         }]
     }
 )
+
+SY
